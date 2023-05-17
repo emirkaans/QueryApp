@@ -1,2 +1,2 @@
-#[ Query App](https://myquery-app.netlify.app/)
+# [ Query App](https://myquery-app.netlify.app/)
 
