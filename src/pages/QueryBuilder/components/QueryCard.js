@@ -84,26 +84,6 @@ const QueryCard = ({
     setChildren(newCards);
   };
 
-  const renderOutput = () => {
-    const currentOutput = { condition };
-
-    if (rules.length > 0) {
-      currentOutput.rules = rules.map((rule) => ({ value: rule.value }));
-    }
-
-    if (children.length > 0) {
-      currentOutput.rules = [
-        ...(currentOutput.children || []),
-        ...children.map((child) => ({
-          condition: child.condition || "AND",
-          rules: child.children || [],
-        })),
-      ];
-    }
-
-    return currentOutput;
-  };
-
   return (
     <>
       <Card
